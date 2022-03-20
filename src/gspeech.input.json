@@ -1,0 +1,13 @@
+{
+  'input':{
+    'text':'Sample narration text. Replace this with a description you wrote or are licensed to use.'
+  },
+  'voice':{
+    'languageCode':'en-US',
+    'name':'en-US-Wavenet-D'
+  },
+  'audioConfig':{
+    'audioEncoding':'MP3'
+  }
+}
+
