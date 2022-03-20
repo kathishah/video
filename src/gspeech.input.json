@@ -1,0 +1,13 @@
+{
+  'input':{
+    'text':'Incredible 3 bedroom, 1 bathroom home on a corner lot in the highly sought after Woodside Plaza neighborhood. Attached one car garage. Moments away from restaurants and shops, parks, hiking trails and major streamlined commute routes.'
+  },
+  'voice':{
+    'languageCode':'en-US',
+    'name':'en-US-Wavenet-D'
+  },
+  'audioConfig':{
+    'audioEncoding':'MP3'
+  }
+}
+
