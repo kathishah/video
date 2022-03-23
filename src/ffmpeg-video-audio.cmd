@@ -1,5 +1,8 @@
 !#/bin/bash
 
+# https://trac.ffmpeg.org/wiki/Concatenate
+# https://stackoverflow.com/questions/63704692/merge-multiple-videos-and-one-audio-with-ffmpeg-loop-all-the-videos-while-audio
+
 ASSET_DIR="/home/chintan/dev/video/properties/P01-ML81883042"
 ffmpeg \
     -stream_loop -1 -f concat \
