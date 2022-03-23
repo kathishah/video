@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# References
+# https://superuser.com/questions/1127615/ffmpeg-zoompan-filter-examples
+# https://superuser.com/questions/1087685/ffmpeg-zoompan-image-to-center-position
+
 ffmpeg \
     -framerate 25 \
     -i ../properties/P01-ML81883042/images/12.jpg \
