@@ -33,5 +33,5 @@ echo "Generating $OUTPUT..."
 # https://stackoverflow.com/questions/17623676/text-on-video-ffmpeg
 ffmpeg \
 -i "$PROPERTY_DIR/temp/$INPUT_FILE" \
--vf "drawtext=fontfile=$PROPERTY_DIR/description/font.ttf:textfile=$PROPERTY_DIR/description/highlights.txt:fontcolor=white:fontsize=36:x=w-tw-20:y=h-th-10" \
+-vf "drawtext=fontfile=$PROPERTY_DIR/description/font.ttf:textfile=$PROPERTY_DIR/description/highlights.txt:fontcolor=white:fontsize=36:x=w-tw-100:y=h-th-10" \
 -codec:a copy $OUTPUT
