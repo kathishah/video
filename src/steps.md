@@ -13,5 +13,6 @@
     1. Take a couple of random images from the higher numbers and create video with zoom/pan: ffmpeg-zoom-pan-two-images.cmd
     1. Concat these two videos with audio: ffmpeg-video-audio.cmd
     1. Trim the video to 30 secs: ffmpeg-trim-video.cmd
-    1. Add text description
+    1. Add text description: ffmpeg-add-text.cmd
+    1. Trim the side bars: ffmpeg-crop-video.cmd
 
