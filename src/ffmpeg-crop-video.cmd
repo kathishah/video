@@ -31,7 +31,7 @@ echo "Reading $PROPERTY_DIR/temp/$INPUT_FILE"
 echo "Generating $OUTPUT..."
 
 #
-# https://stackoverflow.com/questions/17623676/text-on-video-ffmpeg
+# https://video.stackexchange.com/questions/4563/how-can-i-crop-a-video-with-ffmpeg 
 ffmpeg \
 -i "$PROPERTY_DIR/temp/$INPUT_FILE" \
 -filter:v "crop=in_w-200:in_h" \
