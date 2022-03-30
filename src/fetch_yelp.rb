@@ -27,8 +27,18 @@ end
 
 for i in 0..N do
   fetch_id = response.businesses[i].id
-  puts "Fetching \"#{fetch_id}\""
+  puts "Fetching for \"#{fetch_id}\""
   business_details = client.business(fetch_id)
-  photos = business_details.business.photos #only 3 photos
+  business = business_details.business
+  
+  #1. images
+  photos = business.photos #only 3 photos
   # more photos: https://www.yelp.com/biz_photos/#{fetch_id}
+
+  #2. reviews
+  overall_rating = business.rating
+  review_count = business.review_count
+
+  reviews = client.review(fetch_id).reviews
+  # every review has the username: review[i].name and description: review[i].text
 end
