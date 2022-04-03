@@ -1,7 +1,10 @@
 require 'json'
 require 'yelp/fusion'
 
+# References
 # https://github.com/erikgrueter1/yelp-fusion
+# https://www.scrapingbee.com/blog/web-scraping-ruby/#part-ii-a-complete-ruby-web-scraping-framework - Kimurai
+# https://github.com/vifreefly/kimuraframework
 
 #initialize client
 yelp_credentials = JSON.parse(IO.read(Dir::home + "/dev/video/conf/yelp.cred"))
@@ -30,15 +33,23 @@ for i in 0..N do
   puts "Fetching for \"#{fetch_id}\""
   business_details = client.business(fetch_id)
   business = business_details.business
+  puts "[#{fetch_id}]: business name = #{business.name}"
   
   #1. images
   photos = business.photos #only 3 photos
+  puts "[#{fetch_id}]: photos = #{photos}"
   # more photos: https://www.yelp.com/biz_photos/#{fetch_id}
+  puts "[#{fetch_id}]: more photos =  https://www.yelp.com/biz_photos/#{fetch_id}"
 
   #2. reviews
   overall_rating = business.rating
+  puts "[#{fetch_id}]: ratings = #{overall_rating}"
   review_count = business.review_count
+  puts "[#{fetch_id}]: num of reviews = #{review_count}"
 
-  reviews = client.review(fetch_id).reviews
+  puts "============================================="
+  # reviews = client.review(fetch_id).reviews
   # every review has the username: review[i].name and description: review[i].text
 end
+
+
