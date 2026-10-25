@@ -32,7 +32,7 @@ properties/<name>/
 ```
 
 - **Images and text:** use your own listing or product material. `fetch_images.rb <image_base_url> [count]` only downloads from a URL you give it; do not use it on content you have no right to reuse.
-- **Narration:** write a text, put it in `src/gspeech.input.json` style input, and run `src/gspeech.cmd.sh -p <name>` (needs the `gcloud` CLI and a Google Cloud project with the Text-to-Speech API; the text is sent to Google). Alternatively `src/ffmpeg-tts-flite.cmd <name>` works offline if your `ffmpeg` has `flite`.
+- **Narration:** write a text, copy `src/gspeech.input.json` to `properties/<name>/temp/gspeech.input.json` and replace the text, then run `src/gspeech.cmd.sh -p <name>` (needs the `gcloud` CLI and a Google Cloud project with the Text-to-Speech API; the text is sent to Google). Alternatively `src/ffmpeg-tts-flite.cmd <name>` works offline if your `ffmpeg` has `flite`.
 - **Music:** any track you have rights to, saved as `audio/background.mp3`.
 - **Font:** download a font such as Amaranth (SIL Open Font License) from Google Fonts and save it as `common/font.ttf` and `properties/<name>/description/font.ttf`. Both paths are gitignored.
 - **Dataset (optional, for `trulia_data.rb`):** the original experiment used the "Real Estate Data from Trulia" dataset on Kaggle (reference 5 below). It is not included. If you download it, check its terms, save it as `properties/trulia_dataset.csv`, and note that it contains addresses and real estate agents' names and phone numbers; do not republish it.
