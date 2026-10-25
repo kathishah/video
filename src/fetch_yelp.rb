@@ -7,7 +7,7 @@ require 'yelp/fusion'
 # https://github.com/vifreefly/kimuraframework
 
 #initialize client
-yelp_credentials = JSON.parse(IO.read(Dir::home + "/dev/video/conf/yelp.cred"))
+yelp_credentials = JSON.parse(IO.read(File.expand_path("../conf/yelp.cred", __dir__)))
 puts "Initializing..."
 client = Yelp::Fusion::Client.new(yelp_credentials["apiKey"])
 puts "Client initialized"

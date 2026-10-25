@@ -1,6 +1,6 @@
 
-1. Download the images: fetch_images.rb
-1. Download the description: _manual_
+1. Download the images (only ones you may use): fetch_images.rb <image_base_url> [count], run from properties/<name>/
+1. Get the description text: _manual_ (write your own or use text you are licensed to use)
 1. Get audio description
     1. Create input json: _manual_ gspeech.input.json
     1. Call gspeech API: gspeech.cmd

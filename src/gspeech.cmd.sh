@@ -23,7 +23,8 @@ if [ -z "${PROPERTY}" ]; then
 fi
 
 echo "property = ${PROPERTY}"
-PROPERTY_DIR="/home/chintan/dev/video/properties/$PROPERTY"
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROPERTY_DIR="$PROJECT_ROOT/properties/$PROPERTY"
 
 curl -H "Authorization: Bearer "$(gcloud auth application-default print-access-token) -H "Content-Type: application/json; charset=utf-8" --data @$PROPERTY_DIR/temp/gspeech.input.json -o "$PROPERTY_DIR/temp/gspeech.out.json" "https://texttospeech.googleapis.com/v1/text:synthesize"
 

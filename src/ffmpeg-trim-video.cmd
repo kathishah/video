@@ -19,7 +19,8 @@ if [ -z "${PROPERTY}" ]; then
 fi
 
 echo "property = ${PROPERTY}"
-PROPERTY_DIR="/home/chintan/dev/video/properties/$PROPERTY"
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROPERTY_DIR="$PROJECT_ROOT/properties/$PROPERTY"
 
 # https://stackoverflow.com/questions/46508055/using-ffmpeg-to-cut-audio-from-to-position
 

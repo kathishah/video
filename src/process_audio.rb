@@ -26,7 +26,7 @@ unless property
 end
 
 PROPERTY_NAME=property
-BASE_DIR=Dir::home + "/dev/video/properties/#{PROPERTY_NAME}"
+BASE_DIR=File.expand_path("../properties/#{PROPERTY_NAME}", __dir__)
 puts "Executing in #{BASE_DIR}"
 puts "1. left pad gspeech..."
 left_pad_gspeech_cmd = "ffmpeg -i #{BASE_DIR}/audio/gspeech.out.mp3 -af \"adelay=2000|2000\" -y #{BASE_DIR}/audio/gspeech.left_padded.mp3"

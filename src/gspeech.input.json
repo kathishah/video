@@ -1,13 +1,12 @@
 {
-  'input':{
-    'text':'Sample narration text. Replace this with a description you wrote or are licensed to use.'
+  "input": {
+    "text": "Sample narration text. Replace this with a description you wrote or are licensed to use: a bright three bedroom home with a fenced yard, close to parks and shops."
   },
-  'voice':{
-    'languageCode':'en-US',
-    'name':'en-US-Wavenet-D'
+  "voice": {
+    "languageCode": "en-US",
+    "name": "en-US-Wavenet-D"
   },
-  'audioConfig':{
-    'audioEncoding':'MP3'
+  "audioConfig": {
+    "audioEncoding": "MP3"
   }
 }
-

@@ -19,7 +19,8 @@ if [ -z "${PROPERTY}" ]; then
 fi
 
 echo "property = ${PROPERTY}"
-PROPERTY_DIR="/home/chintan/dev/video/properties/$PROPERTY"
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROPERTY_DIR="$PROJECT_ROOT/properties/$PROPERTY"
 ASSET_DIR=$PROPERTY_DIR
 
 # https://superuser.com/questions/833232/create-video-with-5-images-with-fadein-out-effect-in-ffmpeg

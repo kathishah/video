@@ -19,7 +19,8 @@ if [ -z "${PROPERTY}" ]; then
 fi
 
 echo "property = ${PROPERTY}"
-PROPERTY_DIR="/home/chintan/dev/video/properties/$PROPERTY"
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROPERTY_DIR="$PROJECT_ROOT/properties/$PROPERTY"
 
 # https://trac.ffmpeg.org/wiki/Concatenate
 # https://stackoverflow.com/questions/63704692/merge-multiple-videos-and-one-audio-with-ffmpeg-loop-all-the-videos-while-audio

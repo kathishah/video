@@ -22,7 +22,8 @@ if [ -z "${PROPERTY}" ] || [ -z "#{INPUT_FILE}" ]; then
 fi
 
 echo "property = ${PROPERTY}"
-PROPERTY_DIR="/home/chintan/dev/video/properties/$PROPERTY"
+PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROPERTY_DIR="$PROJECT_ROOT/properties/$PROPERTY"
 
 OUTPUT_FILE_NAME=${INPUT_FILE%.*} 
 OUTPUT="$PROPERTY_DIR/temp/$OUTPUT_FILE_NAME-with-text.mp4"

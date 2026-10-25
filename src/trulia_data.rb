@@ -33,7 +33,7 @@ end
 #main
 POS_DESCRIPTION=4
 n = 5
-IO.foreach(Dir::home + "/dev/video/properties/trulia_dataset.csv") do |line|
+IO.foreach(File.expand_path("../properties/trulia_dataset.csv", __dir__)) do |line|
   break if n == 0 #do only for n lines
   CSV.parse(line) { |row|
     puts "desc = #{row[POS_DESCRIPTION]}"
