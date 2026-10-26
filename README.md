@@ -48,7 +48,20 @@ Running the scripts sends: narration text to Google Cloud Text-to-Speech, search
 
 ## Third-party notes
 
-Several `ffmpeg` commands were adapted from Stack Exchange answers; the source URL is in a comment in each file and the original answers carry their own (CC BY-SA) terms. Generated text-to-speech audio, music and images are not part of this repo.
+The MIT licence covers the original code in this repository. Several short `ffmpeg` and Ruby snippets were adapted, with changes, from answers on Stack Overflow, Super User and Video Production Stack Exchange. Those answers are licensed by their authors under Creative Commons Attribution-ShareAlike (CC BY-SA; the version depends on the post date, see each page), and the adapted lines remain under those terms. The source URL is in a comment next to each snippet. The authors are credited on the linked pages:
+
+- `src/audio-mix.cmd`: https://stackoverflow.com/questions/14498539
+- `src/process_audio.rb`: https://stackoverflow.com/questions/6239350, https://superuser.com/questions/579008
+- `src/ffmpeg-add-text.cmd`, `src/ffmpeg-image-to-video-audio-highlights.cmd`: https://stackoverflow.com/questions/17623676
+- `src/ffmpeg-trim-video.cmd`: https://stackoverflow.com/questions/46508055
+- `src/ffmpeg-video-audio.cmd`: https://stackoverflow.com/questions/63704692
+- `src/ffmpeg-crop-video.cmd`: https://video.stackexchange.com/questions/4563
+- `src/ffmpeg-zoom-pan-one-image.cmd`: https://superuser.com/questions/1127615, https://superuser.com/questions/1087685
+- `src/ffmpeg-image-to-video.cmd`, `src/ffmpeg-image-to-video-audio.cmd`, `src/archive/ffmpeg-zoom-pan-2.cmd`: https://superuser.com/questions/833232
+- `src/archive/ffmpeg-zoom-pan-3.cmd`: https://superuser.com/questions/1506050
+- `src/archive/ffmpeg-zoom-pan.cmd`: https://stackoverflow.com/questions/54266237
+
+Generated text-to-speech audio, music and images are not part of this repo.
 
 ## References
 1. ffmpeg.org
